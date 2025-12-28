@@ -11,7 +11,8 @@ export default function YearSelector({ years, selectedYear, setSelectedYear }: {
                   ${selectedYear === year
               ? "bg-zinc-900 dark:bg-white text-white dark:text-black"
               : "bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300"
-            }`}
+            }
+              ${selectedYear !== year ? "hover:bg-zinc-200 dark:hover:bg-zinc-700" : ""}`}
         >
           {year}
         </button>

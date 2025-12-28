@@ -7,7 +7,7 @@ import ChartTypeSelector from "./components/ui/ChartTypeSelector";
 
 type ChartType = "doughnut" | "bar" | "line";
 
-export default function Home() {
+export default function Dashboard() {
   const sales: SalesByYear = salesData;
 
   const years = Object.keys(sales).sort();
